@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@
 body {
   background-color: #f0f0f0; /* Light gray */
   /* Alternatives: #808080 (medium gray), #333333 (dark gray) */
-  font-family:'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   background: linear-gradient(120deg, #d3d3d3, #a9a9a9);
 }
 html {
@@ -15,7 +14,7 @@ html {
 }
 
 p {
-  color:blue;
+  color: blue;
 }
 
 /* TRANSITION */
@@ -165,13 +164,13 @@ section {
   display: flex;
   justify-content: space-between; /* Distribute space between items */
   height: 80vh;
-  flex-direction: row-reverse; /* Image on the right */
+  flex-direction: row;
   padding: 0 5rem; /* Add padding to avoid edge-sticking */
 }
+
 .section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
+  height: 250px;
+  width: 250px;
   margin: auto 0;
 }
 
@@ -241,8 +240,7 @@ section {
 }
 
 .btn-color-1,
-.btn-color-2
-.btn-color-3:hover {
+.btn-color-2 .btn-color-3:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
@@ -254,8 +252,8 @@ section {
 .btn-color-2 {
   background: none;
 }
-.btn-color-3:hover{
-  background:none;
+.btn-color-3:hover {
+  background: none;
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
@@ -315,8 +313,8 @@ section {
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
+  height: 250px;
+  width: 250px;
   margin: auto 0;
 }
 
@@ -439,4 +437,12 @@ footer p {
 
 footer p {
   text-align: center;
+}
+.profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover; /* Ensures the image fills the circle */
+  border: 2px solid white; /* Optional border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
